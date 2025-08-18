@@ -1,4 +1,38 @@
-site_name: Accion Labs Delivery Handbook
-site_description: Comprehensive guide for delivery processes and best practices
-site_author: Accion Labs
-# ... (paste the rest of the mkdocs.yml content here)
+site_name: Accion Delivery Handbook
+site_description: Internal knowledge base powered by MkDocs Material
+# site_url: https://<your-org>.github.io/<your-repo>/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+
+plugins:
+  - search
