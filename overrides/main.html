@@ -243,67 +243,82 @@
 <script>
 // Right sidebar auto-highlighting functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all headings in the content
-    const headings = document.querySelectorAll('.md-content h1, .md-content h2, .md-content h3, .md-content h4, .md-content h5, .md-content h6');
-    const navLinks = document.querySelectorAll('.md-nav--secondary .md-nav__link');
-    
-    // Create intersection observer to track which heading is in view
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Remove active class from all nav links
+    // Wait a bit for the page to fully load
+    setTimeout(function() {
+        // Get all headings in the content
+        const headings = document.querySelectorAll('.md-content h1, .md-content h2, .md-content h3, .md-content h4, .md-content h5, .md-content h6');
+        const navLinks = document.querySelectorAll('.md-nav--secondary .md-nav__link');
+        
+        console.log('Found headings:', headings.length);
+        console.log('Found nav links:', navLinks.length);
+        
+        // Create intersection observer to track which heading is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Remove active class from all nav links
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    // Add active class to corresponding nav link
+                    const targetId = entry.target.id;
+                    const correspondingLink = document.querySelector(`.md-nav--secondary .md-nav__link[href="#${targetId}"]`);
+                    if (correspondingLink) {
+                        correspondingLink.classList.add('active');
+                        console.log('Highlighting:', targetId);
+                    }
+                }
+            });
+        }, {
+            rootMargin: '-10% 0px -80% 0px', // Adjust these values to control when highlighting triggers
+            threshold: 0
+        });
+        
+        // Observe all headings
+        headings.forEach(heading => {
+            if (heading.id) {
+                observer.observe(heading);
+            }
+        });
+        
+        // Also handle scroll events for better responsiveness
+        let scrollTimeout;
+        window.addEventListener('scroll', function() {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(function() {
+                const scrollPosition = window.scrollY + 150; // Offset for header
+                
+                // Find the current section
+                let currentSection = null;
+                headings.forEach(heading => {
+                    if (heading.offsetTop <= scrollPosition) {
+                        currentSection = heading;
+                    }
+                });
+                
+                // Update active state
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                 });
                 
-                // Add active class to corresponding nav link
-                const targetId = entry.target.id;
-                const correspondingLink = document.querySelector(`.md-nav--secondary .md-nav__link[href="#${targetId}"]`);
-                if (correspondingLink) {
-                    correspondingLink.classList.add('active');
+                if (currentSection && currentSection.id) {
+                    const correspondingLink = document.querySelector(`.md-nav--secondary .md-nav__link[href="#${currentSection.id}"]`);
+                    if (correspondingLink) {
+                        correspondingLink.classList.add('active');
+                    }
                 }
-            }
+            }, 50);
         });
-    }, {
-        rootMargin: '-20% 0px -70% 0px', // Adjust these values to control when highlighting triggers
-        threshold: 0
-    });
-    
-    // Observe all headings
-    headings.forEach(heading => {
-        if (heading.id) {
-            observer.observe(heading);
-        }
-    });
-    
-    // Also handle scroll events for better responsiveness
-    let scrollTimeout;
-    window.addEventListener('scroll', function() {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(function() {
-            const scrollPosition = window.scrollY + 100; // Offset for header
-            
-            // Find the current section
-            let currentSection = null;
-            headings.forEach(heading => {
-                if (heading.offsetTop <= scrollPosition) {
-                    currentSection = heading;
-                }
-            });
-            
-            // Update active state
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            
-            if (currentSection && currentSection.id) {
-                const correspondingLink = document.querySelector(`.md-nav--secondary .md-nav__link[href="#${currentSection.id}"]`);
-                if (correspondingLink) {
-                    correspondingLink.classList.add('active');
-                }
+        
+        // Initial highlight for the first section
+        if (headings.length > 0 && headings[0].id) {
+            const firstLink = document.querySelector(`.md-nav--secondary .md-nav__link[href="#${headings[0].id}"]`);
+            if (firstLink) {
+                firstLink.classList.add('active');
             }
-        }, 10);
-    });
+        }
+    }, 500); // Wait 500ms for page to fully load
 });
 </script>
 {% endblock %}
