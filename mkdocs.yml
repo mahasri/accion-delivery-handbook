@@ -1,6 +1,8 @@
 site_name: Accion Delivery Handbook
 site_description: Internal knowledge base powered by MkDocs Material
-site_url: http://127.0.0.1:8019/
+site_url: https://mahasri.github.io/accion-delivery-handbook/
+# For SharePoint embedding, use the GitHub Pages URL
+# site_url: https://your-organization.sharepoint.com/sites/your-site/
 # base_path: /handbook/  # Commented out for local development
 
 theme:
