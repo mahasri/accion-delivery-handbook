@@ -36,6 +36,9 @@ nav:
   - Appendix:
     - SDLC Tools: appendix/sdlc-tools/project-charter.md
     - Sprint Planning: appendix/sdlc-tools/sprint-planning.md
+    - User Story: appendix/sdlc-tools/user-story.md
+    - Retrospective: appendix/sdlc-tools/retrospective.md
+    - Kanban Board: appendix/sdlc-tools/kanban-board.md
 
 markdown_extensions:
   - admonition
