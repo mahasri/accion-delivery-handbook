@@ -6,11 +6,11 @@ Our Extended Delivery Center is based on Accion's core value propositions of co-
 
 ### Key Components
 
-- [100% White-box Model - Approach](customer-deal-signoff.md#100-white-box-model---approach)
-- [EDC Models and Options](customer-deal-signoff.md#edc-models)
-- [Typical EDC Delivery Organization](customer-deal-signoff.md#typical-edc-delivery-organization)
-- [Customer Collaboration Models](customer-deal-signoff.md#customer-collaboration-models)
-- [EDC Phases](customer-deal-signoff.md#edc-phases)
+- [100% White-box Model - Approach](customer-deal-signoff.md)
+- [EDC Models and Options](customer-deal-signoff.md)
+- [Typical EDC Delivery Organization](customer-deal-signoff.md)
+- [Customer Collaboration Models](customer-deal-signoff.md)
+- [EDC Phases](customer-deal-signoff.md)
 
 The delivery practices & processes are defined and streamlined between the teams onsite and offshore. The team defines the process, governance, and tools that will be used to plan, prioritize and execute defined projects & programs.
 
