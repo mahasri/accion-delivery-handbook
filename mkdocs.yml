@@ -53,8 +53,6 @@ nav:
   - Metrics & KPI Definitions: metrics-kpis/index.md
   - Delivery Governance: delivery-governance/index.md
   - Best Practices & Guidelines: best-practices/index.md
-  - Appendix: appendix/index.md
-  - Quick Reference: quick-reference/index.md
   - Complete Handbook: converted/delivery-handbook.md
 
 markdown_extensions:
