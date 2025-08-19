@@ -21,7 +21,18 @@ theme:
 
 nav:
   - Home: index.md
-  - Delivery Handbook: converted/delivery-handbook.md
+  - Introduction: introduction/index.md
+  - Project Initiation: project-initiation/index.md
+  - Transition Management: transition/index.md
+  - Delivery Execution: delivery-execution/index.md
+  - Value-Driven Delivery: value-driven-delivery/index.md
+  - Agile Methodologies: agile-methodologies/index.md
+  - Metrics & KPIs: metrics-kpis/index.md
+  - Delivery Governance: delivery-governance/index.md
+  - Best Practices: best-practices/index.md
+  - GenAI Adoption: genai-adoption/index.md
+  - Appendix:
+    - SDLC Tools: appendix/sdlc-tools/project-charter.md
 
 markdown_extensions:
   - admonition
@@ -44,11 +55,7 @@ extra:
 
 docs_dir: docs
 
-extra_javascript:
-  - assets/js/extra.js
 
-extra_css:
-  - assets/css/extra.css
 
 
 
