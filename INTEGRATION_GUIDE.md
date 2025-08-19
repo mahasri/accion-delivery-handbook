@@ -1,7 +1,7 @@
 # Handbook Integration Guide
 
 ## Overview
-This guide explains how to integrate the Accion Delivery Handbook as a menu item in your main website.
+This guide explains how to integrate the Accion Delivery Handbook as a menu item in your main website, with special optimizations for embedded views.
 
 ## Option 1: Subdirectory Integration (Recommended)
 
@@ -36,7 +36,7 @@ The handbook is already configured with:
 - `site_url: https://your-main-website.com/`
 - `base_path: /handbook/`
 
-## Option 2: Iframe Embed
+## Option 2: Iframe Embed (Enhanced for Embedded View)
 
 ### Step 1: Create Handbook Page
 ```html
@@ -50,6 +50,14 @@ The handbook is already configured with:
             width: 100%;
             height: 100vh;
             border: none;
+            overflow: hidden;
+        }
+        
+        /* Responsive iframe container */
+        @media (max-width: 768px) {
+            .handbook-container {
+                height: 90vh;
+            }
         }
     </style>
 </head>
@@ -64,7 +72,63 @@ The handbook is already configured with:
 <a href="/handbook.html">Delivery Handbook</a>
 ```
 
-## Option 3: Custom Integration
+## 🆕 Option 3: Embedded-Friendly Layout (NEW!)
+
+The handbook now includes **automatic embedded view detection** and **responsive layout optimization**:
+
+### Features for Embedded View:
+- ✅ **Left sidebar always visible** (280px width)
+- ✅ **Right sidebar repositioned** (fixed on right side)
+- ✅ **Responsive design** (adapts to iframe size)
+- ✅ **Mobile navigation toggle** (for small screens)
+- ✅ **Compact typography** (optimized for embedded view)
+- ✅ **Header/footer hidden** (saves space)
+
+### Layout Behavior:
+
+#### **Large Screens (>1200px):**
+```
+┌─────────────┬─────────────────────┬─────────────┐
+│   Left      │      Content        │   Right     │
+│ Sidebar     │      Area           │  Sidebar    │
+│ (280px)     │                     │  (280px)    │
+│             │                     │             │
+└─────────────┴─────────────────────┴─────────────┘
+```
+
+#### **Medium Screens (768px-1200px):**
+```
+┌─────────────┬─────────────────────┐
+│   Left      │      Content        │
+│ Sidebar     │      Area           │
+│ (280px)     │                     │
+│             │                     │
+│             ├─────────────────────┤
+│             │   Right Sidebar     │
+│             │   (at top)          │
+└─────────────┴─────────────────────┘
+```
+
+#### **Small Screens (<768px):**
+```
+┌─────────────────────────────────┐
+│ [☰] Content Area               │
+│                                │
+│                                │
+│                                │
+│                                │
+└─────────────────────────────────┘
+```
+*Left sidebar hidden, toggle button shows*
+
+### Automatic Detection:
+The handbook automatically detects when it's embedded in an iframe and:
+- Hides header and footer
+- Optimizes typography for compact view
+- Enables mobile navigation toggle
+- Adjusts layout responsively
+
+## Option 4: Custom Integration
 
 ### Step 1: Extract Content
 Use MkDocs' search API to access handbook content:
@@ -115,6 +179,13 @@ Update `overrides/main.html` to match your main site's colors and fonts.
 ### Option B: Custom CSS
 Add custom CSS to integrate with your main site's design system.
 
+### Option C: Embedded-Specific Styling
+The handbook includes embedded-specific optimizations:
+- Compact typography
+- Optimized spacing
+- Mobile-friendly navigation
+- Responsive layout
+
 ## Search Integration
 
 ### Global Search
@@ -157,12 +228,14 @@ const handbookSearchIndex = await fetch('/handbook/search/search_index.json');
 2. **Missing assets**: Ensure all files copied to correct location
 3. **Styling conflicts**: Use CSS isolation techniques
 4. **Search not working**: Verify search index is accessible
+5. **Embedded layout issues**: Check iframe dimensions and responsive breakpoints
 
 ### Debug Steps
 1. Check browser console for errors
 2. Verify file paths and permissions
 3. Test handbook in isolation first
 4. Check network requests for missing resources
+5. Test embedded view in different screen sizes
 
 ## Best Practices
 
@@ -171,6 +244,8 @@ const handbookSearchIndex = await fetch('/handbook/search/search_index.json');
 3. **Test thoroughly**: Verify all links and functionality
 4. **Monitor performance**: Optimize loading times
 5. **Backup regularly**: Keep copies of working configurations
+6. **Test embedded view**: Verify layout works in iframe scenarios
+7. **Responsive testing**: Test on different screen sizes
 
 ## Support
 
@@ -178,4 +253,5 @@ For issues with:
 - **Handbook content**: Update markdown files
 - **Configuration**: Modify `mkdocs.yml`
 - **Styling**: Edit `overrides/main.html`
+- **Embedded layout**: Check responsive breakpoints and iframe settings
 - **Integration**: Follow this guide
