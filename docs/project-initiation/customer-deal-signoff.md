@@ -39,6 +39,15 @@ Formal sign-off document to acknowledge that the client has reviewed the deliver
 11. Technology and tools identified
 12. Customer Success criteria defined
 
+All the documents are reviewed, signed off, and approved by the customer before handing them off from the sales team to the delivery team.
+
+## Glossary
+
+- **NDA** - Non-Disclosure Agreement
+- **MSA** - Master Service Agreement
+- **SoW** - Statement of Work
+- **SLA** - Service Level Agreement
+
 ---
 
 *[Back to Project Initiation](../index.md)*

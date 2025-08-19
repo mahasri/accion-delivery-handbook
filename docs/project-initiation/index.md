@@ -78,6 +78,10 @@ The Engagement Delivery Cycle (EDC) outlines four sequential phases for successf
 
 **PLAN → INITIATE → RAMP UP → OPERATE**
 
+Each phase has distinct deliverables and involves specific stakeholders from both client and delivery teams, progressing from initial planning through full operational delivery. The visual below explains the key deliverables and stakeholder involvement across phases, demonstrating how the engagement scales from the core planning team to a complete execution team.
+
+This structured approach ensures organized transition from engagement planning to operational delivery while maintaining clear ownership and responsibilities throughout the project lifecycle.
+
 ## Sections
 
 - [Customer Deal Sign-Off](customer-deal-signoff.md) - Deal closure and handoff process

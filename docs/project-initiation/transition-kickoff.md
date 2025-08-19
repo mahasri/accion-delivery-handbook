@@ -41,24 +41,9 @@ After a deep discussion and understanding with the sales team, the delivery team
 - Identify and introduce the core team with the client – DM, TL, BA to prepare for the project kick-off meeting.
 - Plan for an *EDC Kick-off meeting* - send out the calendar invite to all stakeholders.
 - Recommend and adapt to appropriate Agile scrum ceremonies and estimation techniques – Ask for training sessions if required for the team.
-- Finalize the methodology - Scrum / Kanban.
-- Set the expectations on the team ramp-up, Sprint 0 start date.
-- List and discuss the open / action items and establish a baseline.
-- Identify and define the KT plan (publish KT calendar).
+- Plan for an EDC Kick-off meeting - send out the calendar invite to all stakeholders.
 
-Check the induction process and transition methodology to understand and adopt a relevant transition approach and create a timeline based on project complexity.
-
-![Transition Kickoff Process](/accion-delivery-handbook/assets/media/image7.png)
-
-## Glossary
-
-- **SPOC** - Single Point of Contact
-- **DD** - Delivery Director
-- **DM** - Delivery Manager
-- **TL** - Tech Lead
-- **BA** - Business Analyst
-- **EDC** - Extended Development Center
-- **KT** - Knowledge Transfer
+![Transition Kickoff](/accion-delivery-handbook/assets/media/image7.png)
 
 ---
 
