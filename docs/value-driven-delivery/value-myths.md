@@ -1,12 +1,16 @@
 # Myths around Value
 
-## Overview
+There are various assumptions and myths about value: Only Delivery Leaders can add Value
 
-This section covers common myths and misconceptions around value delivery.
+- We created value just last year
 
-## Content
+- I am a QA/Dev/how can I add value
 
-*This section will be populated with content from the original document.*
+- The customer doesn't want us to add value
+
+- We suggested values - customers don't listen to us
+
+- We are only seen as a Staffing Partner
 
 ---
 

@@ -1,12 +1,6 @@
 # AOOI
 
-## Overview
-
-This section covers AOOI (Accion's Operational Optimization Initiative) framework.
-
-## Content
-
-*This section will be populated with content from the original document.*
+<img src="/accion-delivery-handbook/assets/media/image16.png" style="width:6.5in;height:5.91667in" />
 
 ---
 

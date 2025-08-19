@@ -1,12 +1,24 @@
 # Value mindset
 
-## Overview
+<span class="mark">Here is the list of different value areas that are driven at all levels & roles involved in software delivery</span>
 
-This section covers the value mindset and cultural aspects of value-driven delivery.
+<img src="/accion-delivery-handbook/assets/media/image17.png" style="width:5.51563in;height:5.45325in" />
 
-## Content
+**Scrum Team: Collaborative Execution**
 
-*This section will be populated with content from the original document.*
+Code quality, CI/CD, QA Automation, Accessibility, UX, Tools, NFR Monitoring and improvements, Processes, and standards, etc.
+
+**Engineering & PO Team: Delivery Excellence**
+
+Standards and Best Practices, Metrics & KPIs. NFRs, Roadmap, Agile, Stories, PI Plans etc.
+
+**Delivery Team: Strategic Delivery**
+
+New Tech applicability, Value reviews with AVB, PVB team, Stakeholder management, Metrics & KPIs, Cost Savings, Shades of Green across 5Ps.
+
+**Core Team: Drive Value & Innovation**
+
+Technology Innovations, References, Summits, Strategic initiatives through Architecture, and program value board.
 
 ---
 
