@@ -37,3 +37,19 @@ markdown_extensions:
 
 plugins:
   - search
+
+extra:
+  version:
+    provider: mike
+
+docs_dir: docs
+
+extra_javascript:
+  - assets/js/extra.js
+
+extra_css:
+  - assets/css/extra.css
+
+
+
+
