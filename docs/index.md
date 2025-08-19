@@ -1,12 +1,7 @@
-# Accion Delivery Handbook
+# Welcome to Accion Delivery Handbook
 
-Welcome! This is the internal knowledge site for Accionlabs Delivery. Start converting your Word document into Markdown and add pages under `docs/`.
+<meta http-equiv="refresh" content="0; url='introduction/index.html'">
 
-## How to add content quickly
-- Convert your Word document to Markdown (see README for commands)
-- Place images and other media under `docs/assets/`
-- Create additional pages like `docs/processes.md`, `docs/standards.md`, etc.
-- Update the navigation in `mkdocs.yml` under `nav:`
+You are being redirected to the [Introduction](introduction/index.html) page.
 
-## Local preview
-Run `mkdocs serve` locally to preview changes before pushing. 
+If you are not redirected automatically, please [click here](introduction/index.html). 

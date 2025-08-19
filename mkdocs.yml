@@ -1,7 +1,7 @@
 site_name: Accion Delivery Handbook
 site_description: Internal knowledge base powered by MkDocs Material
-site_url: https://your-main-website.com/
-base_path: /handbook/
+site_url: http://127.0.0.1:8019/
+# base_path: /handbook/  # Commented out for local development
 
 theme:
   name: material
@@ -36,7 +36,7 @@ theme:
   custom_dir: overrides
 
 nav:
-  - Home: index.md
+  - Home: introduction/index.md
   - Introduction: introduction/index.md
   - Project Initiation: project-initiation/index.md
   - Transition: transition/index.md
