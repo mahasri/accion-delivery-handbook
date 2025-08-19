@@ -415,5 +415,50 @@
                  transform: none;
                  box-shadow: 0 2px 6px rgba(49, 130, 206, 0.3);
                }
+
+               /* Force light mode and enhance logo */
+               [data-md-color-scheme] {
+                 color-scheme: light !important;
+               }
+
+               .md-header__button {
+                 color: #ffffff !important;
+               }
+
+               .md-header__title {
+                 font-weight: 600;
+               }
+
+               /* Logo styling */
+               .md-header__logo {
+                 margin-right: 0.5rem;
+               }
+
+               .md-header__logo img,
+               .md-header__logo svg {
+                 height: 2.4rem;
+                 width: auto;
+                 max-width: 200px;
+               }
+
+               /* Ensure light mode for all elements */
+               .md-content {
+                 color: #2d3748 !important;
+                 background: #ffffff !important;
+               }
+
+               .md-content h1,
+               .md-content h2,
+               .md-content h3,
+               .md-content h4,
+               .md-content h5,
+               .md-content h6 {
+                 color: #1a365d !important;
+               }
+
+               /* Remove dark mode toggle if present */
+               .md-header__button[data-md-color-scheme] {
+                 display: none !important;
+               }
   </style>
 {% endblock %}
