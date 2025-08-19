@@ -38,7 +38,6 @@ theme:
   custom_dir: overrides
 
 nav:
-  - Home: introduction/index.md
   - Introduction: introduction/index.md
   - Project Initiation: project-initiation/index.md
   - Transition: transition/index.md

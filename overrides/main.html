@@ -70,12 +70,13 @@
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #3182ce;
+    font-size: 0.9rem; /* Smaller font size */
 }
 
 .md-nav--secondary .md-nav__item .md-nav__link {
     color: #4a5568;
     padding: 0.25rem 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Smaller font size to match left sidebar */
 }
 
 .md-nav--secondary .md-nav__item .md-nav__link:hover {
@@ -215,9 +216,14 @@
     display: none !important;
 }
 
-/* Remove duplicate Home link */
+/* Remove duplicate Home link - hide the first one */
 .md-nav--primary .md-nav__item:first-child .md-nav__link[href="/"] {
-    display: none;
+    display: none !important;
+}
+
+/* Also hide the Home link in the main navigation if it appears twice */
+.md-nav--primary .md-nav__item .md-nav__link[href="/"]:not(:first-child) {
+    display: none !important;
 }
 </style>
 {% endblock %}
