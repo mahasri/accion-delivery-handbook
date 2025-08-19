@@ -23,15 +23,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue
+      accent: blue
       toggle:
         icon: material/brightness-auto
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: blue
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
@@ -39,35 +39,40 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
-  logo: assets/logo.png
   custom_dir: overrides
 
 nav:
   - Home: index.md
   - Introduction: introduction/index.md
   - Project Initiation:
+      - Overview: project-initiation/index.md
       - Customer Deal Sign-Off: project-initiation/customer-deal-signoff.md
       - Transition Kick-Off: project-initiation/transition-kickoff.md
       - EDC Project Kick Off: project-initiation/edc-project-kickoff.md
   - Transition:
+      - Overview: transition/index.md
       - Transition Planning Approach and Methodology: transition/planning-approach.md
       - Sprint 0: transition/sprint-0.md
       - Product Heatmap: transition/product-heatmap.md
   - Delivery Execution:
+      - Overview: delivery-execution/index.md
       - Innovation Engineering Services (Architecture & Design): delivery-execution/innovation-engineering.md
       - SDLC - New Development: delivery-execution/sdlc-new-development.md
       - SDLC - Enhancements & Support: delivery-execution/sdlc-enhancements-support.md
       - SDLC - Managed Services: delivery-execution/sdlc-managed-services.md
   - Value Driven Delivery:
+      - Overview: value-driven-delivery/index.md
       - Value Creation: value-driven-delivery/value-creation.md
       - Myths around Value: value-driven-delivery/value-myths.md
       - Accion Value Approach: value-driven-delivery/accion-value-approach.md
       - AOOI: value-driven-delivery/aooi.md
       - Value mindset: value-driven-delivery/value-mindset.md
   - Gen AI Adoption:
+      - Overview: genai-adoption/index.md
       - KAPS Framework: genai-adoption/kaps-framework.md
       - Generative AI (GenAI) in SDLC: genai-adoption/genai-in-sdlc.md
   - Agile Methodologies:
+      - Overview: agile-methodologies/index.md
       - Agile Terminologies: agile-methodologies/agile-terminologies.md
       - Scrum: agile-methodologies/scrum.md
       - LeSS (Large-Scale Scrum) Framework: agile-methodologies/less-framework.md
@@ -75,15 +80,18 @@ nav:
       - Kanban / Scrumban: agile-methodologies/kanban-scrumban.md
       - SAFe Agile Framework: agile-methodologies/safe-framework.md
   - Metrics & KPI Definitions:
+      - Overview: metrics-kpis/index.md
       - DORA Metrics: metrics-kpis/dora-metrics.md
       - Support Projects: metrics-kpis/support-projects.md
   - Delivery Governance:
+      - Overview: delivery-governance/index.md
       - Governance Activities: delivery-governance/governance-activities.md
       - Accionlabs Value Board (AVB & PVB): delivery-governance/value-board.md
       - Governance Framework: delivery-governance/governance-framework.md
       - Review Process: delivery-governance/review-process.md
       - Other Initiatives: delivery-governance/other-initiatives.md
   - Best Practices & Guidelines:
+      - Overview: best-practices/index.md
       - Requirements Gathering Best Practices: best-practices/requirements-gathering.md
       - Architecture & Design Best Practices: best-practices/architecture-design.md
       - Design Guidelines: best-practices/design-guidelines.md
@@ -92,6 +100,7 @@ nav:
       - Testing & QA Process Guidelines: best-practices/testing-qa-process.md
       - Release Planning Best Practices: best-practices/release-planning.md
   - Appendix:
+      - Overview: appendix/index.md
       - Why EDC?: appendix/why-edc.md
       - Accionlabs Induction Framework (5P Model): appendix/induction-framework.md
       - Kick-Off Checklists: appendix/kickoff-checklists.md
