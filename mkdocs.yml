@@ -1,6 +1,7 @@
 site_name: Accion Delivery Handbook
 site_description: Internal knowledge base powered by MkDocs Material
-site_url: https://mahasri.github.io/accion-delivery-handbook/
+site_url: https://your-main-website.com/
+base_path: /handbook/
 
 theme:
   name: material
