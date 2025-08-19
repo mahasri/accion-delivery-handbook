@@ -89,7 +89,7 @@
     box-shadow: none;
   }
 
-  /* Content area styling */
+  /* Content area styling - NORMAL VIEW */
   .md-content {
     margin-left: 280px; /* Match left sidebar width */
     padding: 2rem;
@@ -231,54 +231,38 @@
     color: #718096;
   }
 
-  /* Right sidebar (table of contents) styling - Repositioned for embedded view */
-  .md-nav--secondary {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 280px;
-    height: 100vh;
-    background: #ffffff;
-    border-left: 1px solid #e2e8f0;
-    overflow-y: auto;
-    z-index: 90;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-  }
-
+  /* Right sidebar (table of contents) styling - NORMAL VIEW */
   .md-nav--secondary .md-nav__title {
     background: linear-gradient(45deg, #3182ce, #1a365d); /* Gradient background */
     color: white; /* White text */
     font-weight: 600; /* Bold font */
     padding: 0.8rem 1rem; /* Increased padding */
     margin-bottom: 0.75rem; /* More space below title */
-    border-radius: 0; /* No rounded corners for fixed position */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
-    border-left: none; /* Remove left border for fixed position */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    border-left: 5px solid #ffffff; /* White border for contrast */
     text-transform: uppercase; /* Keep title uppercase for distinction */
     letter-spacing: 0.8px; /* More spacing for title */
     font-size: 0.9rem; /* Slightly smaller font for title */
-    position: sticky;
-    top: 0;
-    z-index: 10;
   }
 
   .md-nav--secondary .md-nav__list {
     background: #ffffff; /* White background */
-    border-radius: 0; /* No rounded corners for fixed position */
-    padding: 0.5rem; /* Reduced padding for compact view */
-    margin: 0; /* No margin for fixed position */
-    box-shadow: none; /* Remove shadow for fixed position */
-    border: none; /* Remove border for fixed position */
+    border-radius: 6px; /* Rounded corners */
+    padding: 1rem; /* Increased padding */
+    margin: 0.5rem 0; /* More margin */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Enhanced shadow */
+    border: 1px solid #e2e8f0; /* Subtle border */
   }
 
   .md-nav--secondary .md-nav__link {
     color: #4a5568; /* Darker grey text */
     font-weight: 500; /* Medium font weight */
-    font-size: 0.8rem; /* Smaller font for compact view */
-    padding: 0.3rem 0.5rem; /* Reduced padding for compact view */
+    font-size: 0.85rem; /* Slightly smaller font */
+    padding: 0.4rem 0.75rem; /* Adjusted padding */
     border-radius: 4px; /* Slightly rounded links */
     transition: all 0.2s ease; /* Smooth transitions */
-    margin: 0.05rem 0; /* Minimal vertical margin */
+    margin: 0.1rem 0; /* Small vertical margin */
     border-left: 2px solid transparent; /* Transparent left border */
   }
 
@@ -300,80 +284,6 @@
   /* Enhanced spacing between sections */
   .md-nav--secondary .md-nav__item {
     margin-bottom: 0.25rem;
-  }
-
-  /* Adjust content area for right sidebar */
-  .md-content {
-    margin-right: 280px; /* Add right margin for right sidebar */
-    width: calc(100% - 560px); /* Adjust width for both sidebars */
-  }
-
-  /* Responsive design for embedded view */
-  @media (max-width: 1200px) {
-    /* For smaller embedded views, stack right sidebar at top */
-    .md-nav--secondary {
-      position: static;
-      width: 100%;
-      height: auto;
-      max-height: 200px;
-      overflow-y: auto;
-      border-left: none;
-      border-bottom: 1px solid #e2e8f0;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem;
-    }
-
-    .md-nav--secondary .md-nav__title {
-      border-radius: 6px 6px 0 0;
-      position: static;
-    }
-
-    .md-nav--secondary .md-nav__list {
-      border-radius: 0 0 6px 6px;
-      padding: 0.75rem;
-    }
-
-    .md-content {
-      margin-right: 0;
-      width: calc(100% - 280px); /* Only account for left sidebar */
-    }
-  }
-
-  @media (max-width: 768px) {
-    /* For very small embedded views, hide left sidebar and show toggle */
-    .md-nav--primary {
-      transform: translateX(-100%);
-      transition: transform 0.3s ease;
-    }
-
-    .md-nav--primary.md-nav--open {
-      transform: translateX(0);
-    }
-
-    .md-content {
-      margin-left: 0;
-      width: 100%;
-      padding: 1rem;
-    }
-
-    /* Add toggle button for mobile */
-    .md-nav-toggle {
-      position: fixed;
-      top: 1rem;
-      left: 1rem;
-      z-index: 200;
-      background: #3182ce;
-      color: white;
-      border: none;
-      padding: 0.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      display: block;
-    }
-
-    .md-nav-toggle:hover {
-      background: #2b6cb0;
-    }
   }
 
   /* Force light mode and enhance logo */
@@ -421,66 +331,200 @@
     display: none !important;
   }
 
+  /* EMBEDDED VIEW STYLES - Only apply when embedded */
+  .embedded-view .md-content {
+    margin-right: 280px; /* Add right margin for right sidebar */
+    width: calc(100% - 560px); /* Adjust width for both sidebars */
+  }
+
+  .embedded-view .md-nav--secondary {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    background: #ffffff;
+    border-left: 1px solid #e2e8f0;
+    overflow-y: auto;
+    z-index: 90;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .embedded-view .md-nav--secondary .md-nav__title {
+    border-radius: 0; /* No rounded corners for fixed position */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .embedded-view .md-nav--secondary .md-nav__list {
+    border-radius: 0; /* No rounded corners for fixed position */
+    padding: 0.5rem; /* Reduced padding for compact view */
+    margin: 0; /* No margin for fixed position */
+    box-shadow: none; /* Remove shadow for fixed position */
+    border: none; /* Remove border for fixed position */
+  }
+
+  .embedded-view .md-nav--secondary .md-nav__link {
+    font-size: 0.8rem; /* Smaller font for compact view */
+    padding: 0.3rem 0.5rem; /* Reduced padding for compact view */
+    margin: 0.05rem 0; /* Minimal vertical margin */
+  }
+
+  /* Responsive design for embedded view */
+  .embedded-view .md-nav--secondary {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+    border-left: none;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+
+  .embedded-view .md-nav--secondary .md-nav__title {
+    border-radius: 6px 6px 0 0;
+    position: static;
+  }
+
+  .embedded-view .md-nav--secondary .md-nav__list {
+    border-radius: 0 0 6px 6px;
+    padding: 0.75rem;
+  }
+
+  .embedded-view .md-content {
+    margin-right: 0;
+    width: calc(100% - 280px); /* Only account for left sidebar */
+  }
+
+  @media (max-width: 1200px) {
+    .embedded-view .md-nav--secondary {
+      position: static;
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      overflow-y: auto;
+      border-left: none;
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+
+    .embedded-view .md-nav--secondary .md-nav__title {
+      border-radius: 6px 6px 0 0;
+      position: static;
+    }
+
+    .embedded-view .md-nav--secondary .md-nav__list {
+      border-radius: 0 0 6px 6px;
+      padding: 0.75rem;
+    }
+
+    .embedded-view .md-content {
+      margin-right: 0;
+      width: calc(100% - 280px); /* Only account for left sidebar */
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* For very small embedded views, hide left sidebar and show toggle */
+    .embedded-view .md-nav--primary {
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+
+    .embedded-view .md-nav--primary.md-nav--open {
+      transform: translateX(0);
+    }
+
+    .embedded-view .md-content {
+      margin-left: 0;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    /* Add toggle button for mobile */
+    .embedded-view .md-nav-toggle {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 200;
+      background: #3182ce;
+      color: white;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+    }
+
+    .embedded-view .md-nav-toggle:hover {
+      background: #2b6cb0;
+    }
+  }
+
   /* Embedded-specific optimizations */
-  .md-header {
+  .embedded-view .md-header {
     display: none; /* Hide header in embedded mode */
   }
 
-  .md-footer {
+  .embedded-view .md-footer {
     display: none; /* Hide footer in embedded mode */
   }
 
   /* Compact mode for embedded view */
-  .md-content h1 {
+  .embedded-view .md-content h1 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
 
-  .md-content h2 {
+  .embedded-view .md-content h2 {
     font-size: 1.4rem;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
   }
 
-  .md-content h3 {
+  .embedded-view .md-content h3 {
     font-size: 1.2rem;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
   }
 
   /* Optimize spacing for embedded view */
-  .md-content p {
+  .embedded-view .md-content p {
     margin-bottom: 0.75rem;
   }
 
-  .md-content ul, .md-content ol {
+  .embedded-view .md-content ul, .embedded-view .md-content ol {
     margin-bottom: 0.75rem;
   }
 
-  .md-content li {
+  .embedded-view .md-content li {
     margin-bottom: 0.25rem;
   }
 
   /* Enhanced table styling for embedded view */
-  .md-content table {
+  .embedded-view .md-content table {
     font-size: 0.9rem;
     margin: 0.75rem 0;
   }
 
-  .md-content th,
-  .md-content td {
+  .embedded-view .md-content th,
+  .embedded-view .md-content td {
     padding: 0.5rem;
   }
 
   /* Code block optimization for embedded view */
-  .md-content pre {
+  .embedded-view .md-content pre {
     font-size: 0.85rem;
     padding: 0.75rem;
     margin: 0.75rem 0;
   }
 
   /* Image optimization for embedded view */
-  .md-content img {
+  .embedded-view .md-content img {
     margin: 0.75rem 0;
     max-width: 100%;
   }
