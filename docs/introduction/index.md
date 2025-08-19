@@ -6,22 +6,19 @@ The content within addresses practitioners at all levels, providing methodologic
 
 Delivery Execution also covers Agile and Scrum Roles, Agile terminologies and Ceremonies, and Metrics and KPI definitions, fostering a Collaborative and Adaptive Work Environment.
 
-## Key Sections
+## Table of Contents
 
-- **Project Initiation** - Setting up projects for success
-- **Transition Management** - Smooth handoffs and onboarding
-- **Delivery Execution** - SDLC methodologies and practices
-- **Value-Driven Delivery** - Maximizing business value
-- **Agile Methodologies** - Scrum, Kanban, and scaling frameworks
-- **Governance** - Oversight and quality assurance
-- **Best Practices** - Proven guidelines and templates
-
-## Getting Started
-
-1. Review the [Project Initiation](../project-initiation/) section for new projects
-2. Use the [Templates and Tools](../appendix/sdlc-tools/) for consistent delivery
-3. Follow [Best Practices](../best-practices/) for quality assurance
+- [Project Initiation](../project-initiation/)
+- [Transition Management](../transition/)
+- [Delivery Execution](../delivery-execution/)
+- [Value-Driven Delivery](../value-driven-delivery/)
+- [GenAI Adoption](../genai-adoption/)
+- [Agile Methodologies](../agile-methodologies/)
+- [Metrics & KPIs](../metrics-kpis/)
+- [Delivery Governance](../delivery-governance/)
+- [Best Practices](../best-practices/)
+- [Appendix](../appendix/)
 
 ---
 
-*Next: [Project Initiation →](../project-initiation/)*
+*[Back to Home](../index.md)*
