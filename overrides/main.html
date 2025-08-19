@@ -41,19 +41,19 @@
                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
                }
 
-               /* Main section titles (parent items) - Specific styling for main sections */
+               /* Main section titles (parent items) - Clean Professional Styling */
                .md-nav--primary .md-nav__item > .md-nav__link {
                  color: #ffffff;
-                 font-weight: 700;
-                 font-size: 1rem;
+                 font-weight: 600;
+                 font-size: 0.95rem;
                  padding: 0.8rem 1.2rem;
                  border-radius: 0;
                  transition: all 0.2s ease;
                  background: #3182ce;
                  border-bottom: 1px solid #2b6cb0;
                  margin: 0;
-                 text-transform: uppercase;
-                 letter-spacing: 0.5px;
+                 text-transform: none;
+                 letter-spacing: 0.2px;
                  border-left: 4px solid #1a365d;
                }
 
@@ -309,40 +309,54 @@
     
                    /* Additional enhancements - Accionlabs Classic */
 
-               /* Right sidebar (table of contents) styling */
+               /* Right sidebar (table of contents) styling - Elegant Design */
                .md-nav--secondary .md-nav__title {
-                 background: #1a365d;
+                 background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
                  color: white;
                  font-weight: 600;
-                 padding: 0.75rem;
-                 margin-bottom: 0.5rem;
-                 border-radius: 0;
-                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                 font-size: 0.9rem;
+                 padding: 0.8rem 1rem;
+                 margin-bottom: 0.75rem;
+                 border-radius: 4px;
+                 box-shadow: 0 2px 8px rgba(26, 54, 93, 0.15);
                  border-left: 3px solid #3182ce;
+                 text-transform: none;
+                 letter-spacing: 0.3px;
                }
 
                .md-nav--secondary .md-nav__list {
-                 background: #f7fafc;
-                 border-radius: 0;
-                 padding: 0.75rem;
-                 margin: 0.25rem 0;
-                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-                 border-left: 2px solid #e2e8f0;
+                 background: #ffffff;
+                 border-radius: 6px;
+                 padding: 1rem;
+                 margin: 0.5rem 0;
+                 box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+                 border: 1px solid #e2e8f0;
                }
 
                .md-nav--secondary .md-nav__link {
-                 color: #2d3748;
+                 color: #4a5568;
                  font-weight: 500;
-                 padding: 0.25rem 0.5rem;
-                 border-radius: 0;
+                 font-size: 0.85rem;
+                 padding: 0.4rem 0.75rem;
+                 border-radius: 4px;
                  transition: all 0.2s ease;
-                 font-size: 0.9rem;
+                 margin: 0.1rem 0;
+                 border-left: 2px solid transparent;
                }
 
                .md-nav--secondary .md-nav__link:hover {
-                 background: #bee3f8;
+                 background: linear-gradient(135deg, #bee3f8 0%, #e6fffa 100%);
                  color: #2b6cb0;
-                 transform: none;
+                 transform: translateX(2px);
+                 border-left-color: #3182ce;
+                 box-shadow: 0 1px 4px rgba(49, 130, 206, 0.15);
+               }
+
+               .md-nav--secondary .md-nav__link--active {
+                 background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+                 color: white;
+                 border-left-color: #1a365d;
+                 box-shadow: 0 2px 6px rgba(49, 130, 206, 0.25);
                }
 
                /* Enhanced spacing between sections */
