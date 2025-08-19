@@ -35,6 +35,7 @@ nav:
   - Complete Handbook: converted/delivery-handbook.md
   - Appendix:
     - SDLC Tools: appendix/sdlc-tools/project-charter.md
+    - Sprint Planning: appendix/sdlc-tools/sprint-planning.md
 
 markdown_extensions:
   - admonition

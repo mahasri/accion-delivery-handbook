@@ -1,4 +1,4 @@
-![Delivery Handbook Logo](../assets/2ed88e01db860e124d144c5fe92e2f922f8d0165.png)
+![Delivery Handbook Logo](/accion-delivery-handbook/assets/2ed88e01db860e124d144c5fe92e2f922f8d0165.png)
 
 **Delivery Handbook**
 
@@ -235,7 +235,7 @@ The White-box Model approach is based on the following principles.
 
 - Structured and Repeatable processes right from the start
 
-<img src="../assets/media/image3.png"
+<img src="/accion-delivery-handbook/assets/media/image3.png"
 style="width:6.36458in;height:4.42708in" />
 
 #### EDC Models
@@ -243,7 +243,7 @@ style="width:6.36458in;height:4.42708in" />
 The EDC models below are classified based on the level of involvement in
 software development between Accionlabs and the customer.
 
-<img src="../assets/media/image4.png"
+<img src="/accion-delivery-handbook/assets/media/image4.png"
 style="width:6.56776in;height:5.23576in" />
 
 ### 
@@ -252,7 +252,7 @@ style="width:6.56776in;height:5.23576in" />
 
 Below is a representation of a typical Accionlabs EDC delivery model:
 
-<img src="../assets/media/image5.png"
+<img src="/accion-delivery-handbook/assets/media/image5.png"
 style="width:6.62692in;height:3.06898in" />
 
 ##### Leadership team
@@ -289,7 +289,7 @@ recommendations based on project needs.
 communication with the customers vary. Our Accion team org structure is
 also defined based on the defined model.</span>
 
-<img src="../assets/media/image6.png"
+<img src="/accion-delivery-handbook/assets/media/image6.png"
 style="width:5.37963in;height:4.94282in" />
 
 #### EDC Phases
@@ -513,7 +513,7 @@ Check the induction process and transition methodology
 adopt a relevant transition approach and create a timeline based on
 project complexity.
 
-<img src="../assets/media/image7.png"
+<img src="/accion-delivery-handbook/assets/media/image7.png"
 style="width:6.13021in;height:8.95784in" />
 
 #### Glossary
@@ -785,7 +785,7 @@ includes the following phases:
 
 6.  Operationalize
 
-<img src="../assets/media/image8.png"
+<img src="/accion-delivery-handbook/assets/media/image8.png"
 style="width:6.41667in;height:8.88542in" />
 
 ##### 1. Prepare Phase
@@ -1546,7 +1546,7 @@ understanding etc. For smaller projects, Sprint 0 can be completed in
 3-5 days.
 
 The following table shows a sample sprint 0
-plan:<img src="../assets/media/image9.png"
+plan:<img src="/accion-delivery-handbook/assets/media/image9.png"
 style="width:6.20313in;height:7.08172in" />
 
 ## Product Heatmap
@@ -1581,7 +1581,7 @@ Data Collection Methods:
     'P' shown in the example) to help teams focus on critical components
     first.
 
-<img src="../assets/media/image10.png"
+<img src="/accion-delivery-handbook/assets/media/image10.png"
 style="width:6.46354in;height:1.98646in" />
 
 # Delivery Execution
@@ -1637,7 +1637,7 @@ throughout the Innovation engineering lifecycle. This approach allows
 flexibility, continuous refinement, and the ability to adapt to changing
 requirements and emerging insights.
 
-<img src="../assets/media/image11.png"
+<img src="/accion-delivery-handbook/assets/media/image11.png"
 style="width:6.5in;height:5.73611in" />
 
 Key aspects of our agile approach include:
@@ -1684,7 +1684,7 @@ collaborative work between technical consultants and design consultants
 and ensures that both technical excellence and user-centricity are
 achieved simultaneously.
 
-<img src="../assets/media/image12.png"
+<img src="/accion-delivery-handbook/assets/media/image12.png"
 style="width:5.01563in;height:7.12447in" />
 
 #### Architecture Design Stream
@@ -2028,7 +2028,7 @@ design phase of the innovation engineering lifecycle. It is customized
 to meet the specific client’s strategic objectives and primarily serves
 as an example of the process.
 
-<img src="../assets/media/image13.png"
+<img src="/accion-delivery-handbook/assets/media/image13.png"
 style="width:4.67864in;height:7.18229in" />
 
 #### Program Planning
@@ -2876,7 +2876,7 @@ positively impacting the bottom line.
 
 #### Levels of Support Provided
 
-<img src="../assets/media/image14.png"
+<img src="/accion-delivery-handbook/assets/media/image14.png"
 style="width:6.68203in;height:3.94519in" />
 
 #### Communication Model:
@@ -3048,7 +3048,7 @@ listed below:
 - Build strong relationships with customers by introducing regular
   feedback loops & collaboration.
 
-<img src="../assets/media/image15.png"
+<img src="/accion-delivery-handbook/assets/media/image15.png"
 style="width:5.53646in;height:4.82597in" />
 
 **Logistics**
@@ -3191,14 +3191,14 @@ engagements.
 
 ### AOOI
 
-<img src="../assets/media/image16.png"
+<img src="/accion-delivery-handbook/assets/media/image16.png"
 style="width:6.5in;height:5.91667in" />
 
 ### Value mindset 
 
 <span class="mark">Here is the list of different value areas that are
 driven at all levels & roles involved in software
-delivery</span><img src="../assets/media/image17.png"
+delivery</span><img src="/accion-delivery-handbook/assets/media/image17.png"
 style="width:5.51563in;height:5.45325in" />
 
 **Scrum Team: Collaborative Execution**
@@ -3243,7 +3243,7 @@ from transforming unstructured content into actionable insights, to
 delivering data-driven analytics, optimizing business processes, and
 modernizing legacy systems.
 
-<img src="../assets/media/image18.png"
+<img src="/accion-delivery-handbook/assets/media/image18.png"
 style="width:6.5in;height:4.25in" />
 
 By addressing both technological and operational dimensions, KAPS helps
@@ -3316,7 +3316,7 @@ security standards.
 
 #### Key Focus Areas in SDLC
 
-<img src="../assets/media/image19.png"
+<img src="/accion-delivery-handbook/assets/media/image19.png"
 style="width:6.5807in;height:3.73558in" />
 
 **Core Development**
@@ -3412,7 +3412,7 @@ efficiency and accuracy. The system processes test cases through
 carefully engineered prompts, generates appropriate test scripts, and
 manages the entire execution pipeline through to reporting.</span>
 
-<img src="../assets/media/image20.png"
+<img src="/accion-delivery-handbook/assets/media/image20.png"
 style="width:6.53793in;height:3.19271in" />
 
 ####  
@@ -3553,7 +3553,7 @@ maturing Scrum Teams as we progress.
 
 ### Scrum
 
-**Scrum Process Flow:**<img src="../assets/media/image21.png"
+**Scrum Process Flow:**<img src="/accion-delivery-handbook/assets/media/image21.png"
 style="width:6.47917in;height:4.88496in" />
 
 - Scrum is a management framework for incremental product development
@@ -3661,7 +3661,7 @@ described in the Scrum document:
 
 - Sprint Retrospective
 
-<img src="../assets/media/image22.png"
+<img src="/accion-delivery-handbook/assets/media/image22.png"
 style="width:6.45833in;height:2.7144in" />
 
 <span class="mark">This stage produces the source code, executables, and
@@ -4007,7 +4007,7 @@ engineering practices.
 
 - <span class="mark">Consistent coding standards</span>
 
-<img src="../assets/media/image23.png"
+<img src="/accion-delivery-handbook/assets/media/image23.png"
 style="width:6.5in;height:4.73611in" />
 
 ### Kanban / Scrumban
@@ -4486,7 +4486,7 @@ SLA=No. of Incidents Resolved/Total No of Incidents.
 Below image shares a snapshot of Governance activities at different
 stages and events and the owners involved
 
-<img src="../assets/media/image24.png"
+<img src="/accion-delivery-handbook/assets/media/image24.png"
 style="width:5.00705in;height:6.94271in" />
 
 **Planning & Requirements Stage:**
@@ -4602,7 +4602,7 @@ style="width:5.00705in;height:6.94271in" />
 The Accionlabs Governance Framework operates on a structured two-tier
 model that defines clear focus areas at each level:
 
-<img src="../assets/media/image25.png"
+<img src="/accion-delivery-handbook/assets/media/image25.png"
 style="width:6.47396in;height:3.11824in" />
 
 ##### Tier 1: Operational Monitoring (Regular Project Management)
@@ -4674,7 +4674,7 @@ effectiveness:
 
 - ROI and business value metrics
 
-<img src="../assets/media/image26.png"
+<img src="/accion-delivery-handbook/assets/media/image26.png"
 style="width:6.43229in;height:3.21615in" />
 
 Through regular program and technology reviews, the Value Board teams
@@ -4763,8 +4763,8 @@ different teams for various purposes.
 5.  Leadership gets instant information on Accion’s technology, tooling
     and measurement maturity across projects instantly
 
-<img src="../assets/media/image27.png"
-style="width:3.34886in;height:2.67708in" /><img src="../assets/media/image27.png"
+<img src="/accion-delivery-handbook/assets/media/image27.png"
+style="width:3.34886in;height:2.67708in" /><img src="/accion-delivery-handbook/assets/media/image27.png"
 style="width:3.18155in;height:3.01039in" />
 
 Sample Metrics and Tools Report is as seen below for the Top 30 accounts
@@ -7506,7 +7506,7 @@ The 5P model has been defined as an induction framework to simplify the
 process and maximize the outcome of development work from the team and
 leadership of the organization.
 
-<img src="../assets/media/image28.png"
+<img src="/accion-delivery-handbook/assets/media/image28.png"
 style="width:5.92385in;height:5.08651in" />
 
 **Products**
@@ -7859,7 +7859,7 @@ services, **emphasizing:**
 
 - Candidate authenticity, attitude and engagement
 
-<img src="../assets/media/image29.png"
+<img src="/accion-delivery-handbook/assets/media/image29.png"
 style="width:3.24479in;height:4.82334in" />
 
 The workflow above demonstrates a balance between thorough assessment
@@ -8119,7 +8119,7 @@ Alternatively, Playwright can also get started to run tests.
 2.  To set up Playwright, paste **Install Playwright** in the command
     panel.
 
-<img src="../assets/media/image30.png"
+<img src="/accion-delivery-handbook/assets/media/image30.png"
 style="width:6.5in;height:2.75in" />
 
 3.  Choose the browsers to run the tests which are configured in the
@@ -8128,7 +8128,7 @@ style="width:6.5in;height:2.75in" />
 
 4.  Choose GitHub Actions setup to run tests on CI.
 
-<img src="../assets/media/image31.png"
+<img src="/accion-delivery-handbook/assets/media/image31.png"
 style="width:6.5in;height:3.13889in" />
 
 5\. The Playwright UI will show the test explorer with all the files in
@@ -8271,7 +8271,7 @@ scripts without manual coding.
 
 npx playwright test
 
-<img src="../assets/media/image32.png"
+<img src="/accion-delivery-handbook/assets/media/image32.png"
 style="width:5.97396in;height:2.05834in" />
 
 2.  To execute test cases with Playwright UI tool, run the command to
@@ -8282,7 +8282,7 @@ npx playwright test --ui
 3.  On the Playwright UI, scroll over a test case and click execute. The
     test case results will appear in the right panel.
 
-> <img src="../assets/media/image33.png"
+> <img src="/accion-delivery-handbook/assets/media/image33.png"
 > style="width:5.98438in;height:2.04274in" />
 
 **Code Generation**
@@ -8297,7 +8297,7 @@ actions and generating the equivalent code.
     interactions / actions like Click, adding text and pressing the
     Enter button.
 
-> <img src="../assets/media/image34.png"
+> <img src="/accion-delivery-handbook/assets/media/image34.png"
 > style="width:5.92188in;height:2.20172in" />
 
 3.  In the back end, the user interactions will be captured as a test
@@ -8305,13 +8305,13 @@ actions and generating the equivalent code.
     can be grouped & organized into folders to avoid re-running of test
     cases.
 
-> <img src="../assets/media/image35.png"
+> <img src="/accion-delivery-handbook/assets/media/image35.png"
 > style="width:5.99611in;height:2.18229in" />
 
 <span class="mark">4. The configuration for execution of the test is
 available in the playwright.config.js file as below.</span>
 
-> <img src="../assets/media/image36.png"
+> <img src="/accion-delivery-handbook/assets/media/image36.png"
 > style="width:5.98969in;height:2.22693in" />
 
 4.  <span class="mark">In the config file, file name, parallel testing,
@@ -8349,7 +8349,7 @@ three layers:</span>
 3.  <span class="mark">API Automation: For testing backend endpoints
     exposed by the .NET Core Web API.</span>
 
-> <img src="../assets/media/image37.png"
+> <img src="/accion-delivery-handbook/assets/media/image37.png"
 > style="width:5.99479in;height:3.80439in" />
 
 **<span class="mark">CI/CD Integration:</span>**
@@ -8500,15 +8500,15 @@ Playwright.</span>
 <ul>
 <li><p><mark>For Node.js:</mark> <a
 href="https://playwright.dev/docs/intro"><mark></mark><img
-src="../assets/media/image38.png" /><mark>Installation |
+src="/accion-delivery-handbook/assets/media/image38.png" /><mark>Installation |
 Playwright</mark></a></p></li>
 <li><p><mark>For Python:</mark> <a
 href="https://playwright.dev/python/docs/intro"><mark></mark><img
-src="../assets/media/image38.png" /><mark>Installation | Playwright
+src="/accion-delivery-handbook/assets/media/image38.png" /><mark>Installation | Playwright
 Python</mark></a></p></li>
 <li><p><mark>For Java:</mark> <a
 href="https://playwright.dev/java/docs/intro"><mark></mark><img
-src="../assets/media/image38.png" /><mark>Installation | Playwright
+src="/accion-delivery-handbook/assets/media/image38.png" /><mark>Installation | Playwright
 Java</mark></a></p></li>
 </ul></li>
 </ul></td>
@@ -8517,7 +8517,7 @@ Java</mark></a></p></li>
 <td><ul>
 <li><p><mark>Playwright with Docker support:</mark> <a
 href="https://playwright.dev/docs/docker"><mark></mark><img
-src="../assets/media/image38.png" /><mark>Docker |
+src="/accion-delivery-handbook/assets/media/image38.png" /><mark>Docker |
 Playwright</mark></a></p></li>
 </ul></td>
 </tr>
