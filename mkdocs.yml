@@ -8,7 +8,8 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
     - content.code.copy
     - content.tabs.link
   palette:
@@ -31,6 +32,7 @@ nav:
   - Delivery Governance: delivery-governance/index.md
   - Best Practices: best-practices/index.md
   - GenAI Adoption: genai-adoption/index.md
+  - Complete Handbook: converted/delivery-handbook.md
   - Appendix:
     - SDLC Tools: appendix/sdlc-tools/project-charter.md
 
