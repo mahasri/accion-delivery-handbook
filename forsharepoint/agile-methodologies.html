@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Methodologies - Accion Delivery Handbook</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #ffffff;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #1a365d;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #3182ce;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #1a365d;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: #1a365d;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #3182ce;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .manifesto-box {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .manifesto-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .manifesto-box li {
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 0.75rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #3182ce;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-top: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background: #f7fafc;
+        }
+
+        .highlight-box {
+            background: #f7fafc;
+            border-left: 4px solid #3182ce;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .back-link {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+            font-style: italic;
+            color: #718096;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Agile Methodologies</h1>
+
+    <p><strong>Collaboration among stakeholders to deliver value-driven services to customers in frequent increments with consistent reflection and adaption.</strong></p>
+
+    <h2>Agile Manifesto</h2>
+
+    <div class="manifesto-box">
+        <ul>
+            <li><strong>Individuals & Interactions</strong> over Processes & Tools</li>
+            <li><strong>Working Software</strong> over Comprehensive Documentation</li>
+            <li><strong>Customer Collaboration</strong> over Contract Negotiations</li>
+            <li><strong>Responding & Embracing Change</strong> over Following a Plan</li>
+        </ul>
+    </div>
+
+    <h2>Agile Terminologies</h2>
+
+    <h3>Product</h3>
+    <p>Agile and Scrum begin with a Product. The Product can be anything that offers value to a customer or group of customers. Products are dynamic because customers are dynamic—ever-changing and evolving. What delighted the customer a while ago is now standard and expected as the minimum acceptable product today. This is where the Product Owner steps in. The Product Owner maintains the product's viability in the marketplace by increasing its real or perceived value to the customer over time.</p>
+
+    <h3>Product Backlog</h3>
+    <p>The Product Backlog is a collection of all potential product enhancements, fixes, and upgrades. Regardless of the source, the Product Backlog contains all the features that are needed in the product. Product owners, development team, and customers create the features as part of the backlog to plan their next release work.</p>
+
+    <h3>User Stories</h3>
+    <p>Items in the Product Backlog are defined by their User Story. A User Story is a statement about the product need from the requestor's point of view, usually the customer. When a new User Story enters the Product Backlog, it may not be well-defined or may be too large to complete within one sprint. The Product Owner, with the help of the Scrum Team, progressively refines or grooms large User Stories in the backlog until they are "ready." A User Story is ready when it has enough detail and refinement that the development team can understand it, and it is small and manageable enough to be completed within one sprint.</p>
+
+    <h3>Priority</h3>
+    <p>Grooming the Product Backlog also includes prioritizing the User Stories. User Stories are prioritized based on factors such as customer need, market competition, mandate deadlines, corporate strategy, and end-of-life technology. The Product Owner sets the User Story priority but must solicit information from the Scrum Team and architecture experts to ensure the priority is technically feasible. User Stories with greater priority should have higher levels of detail and refinement. This progressive elaboration of the Product Backlog in Agile differs from waterfall, where all requirements must be fully detailed before work can begin. In Agile, a User Story gains greater detail as its priority increases. User Stories with the highest priority in the Product Backlog should be fully elaborated, estimated, and small enough to be completed within one sprint.</p>
+
+    <h3>Sprint Backlog</h3>
+    <p>Planned Sprint Backlog and final Sprint Backlog are subsets of the Product Backlog. Product Owner identifies the User Stories he wants to complete in the upcoming Sprint by assigning them to the Sprint Backlog.</p>
+
+    <p>From the Product Owner's perspective, the Planned Sprint Backlog contains User Stories that are:</p>
+    <ol>
+        <li>Highest order of priority</li>
+        <li>Need to be completed to meet a deadline</li>
+        <li>Is a prerequisite or related item for another Product Team to meet a deadline</li>
+    </ol>
+
+    <p>The final Sprint Backlog is the responsibility of the Scrum Team. The Scrum Team reviews each User Story in the Sprint Backlog and confirms with the Product Owner:</p>
+    <ol>
+        <li>that they fully understand the customer's intent.</li>
+        <li>The estimated Points are accurate</li>
+        <li>Select the User Stories they commit to completing</li>
+    </ol>
+
+    <p>An effective Scrum Team will not have large gaps in the planned and final Sprint Backlogs; only making adjustments to fit adjusted points into Sprint velocity, or a technology impediment or prerequisite dictates a change to the final Sprint Backlog. This will be a sign of maturing Scrum Teams as we progress.</p>
+
+    <h2>Scrum</h2>
+
+    <p><strong>Scrum Process Flow:</strong></p>
+
+    <img src="assets/media/image21.png" alt="Scrum Process Flow">
+
+    <ul>
+        <li>Scrum is a management framework for incremental product development using one or more cross-functional, self-organizing teams of about seven people each.</li>
+        <li>It provides a structure of roles, meetings, rules, and artefacts. Teams are responsible for creating and adapting their processes within this framework.</li>
+        <li>Scrum uses fixed-length iterations, called Sprints, which are typically two weeks or 30 days long.</li>
+        <li>Scrum teams attempt to build a potentially shippable (properly tested) product increment every iteration.</li>
+    </ul>
+
+    <h3>Scrum Roles</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Scrum Roles</th>
+                <th>Key Responsibilities</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Product Owner</strong></td>
+                <td>
+                    • Responsible for creating the product vision and building the product backlog<br>
+                    • Constantly re-prioritizes the Product Backlog, adjusting any long-term expectations such as release plans<br>
+                    • Works closely with stakeholders (internal and external) to understand & prioritize product increments based on agreed expectations from the product<br>
+                    • Trained to ask the right questions that can extract clear and complete requirements<br>
+                    • Responsible for maximizing the return on investment (ROI) of the development effort<br>
+                    • Decides the deliverables in subsequent deployments<br>
+                    • Accepts or rejects each product increment<br>
+                    • Manages budgets and release plan & schedule<br>
+                    • Analyze dev team productivity progress and identify improvement ideas
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Scrum Master</strong></td>
+                <td>
+                    • Facilitates the Scrum process<br>
+                    • Helps resolve impediments<br>
+                    • Creates an environment conducive to team self-organization<br>
+                    • Captures empirical data to adjust forecasts<br>
+                    • Shields the team from external interference and distractions to keep it in group flow (a.k.a. the zone)<br>
+                    • Enforces time boxes<br>
+                    • Keeps Scrum artefacts visible<br>
+                    • Promotes improved engineering practices<br>
+                    • Has no management authority over the team
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Development team</strong></td>
+                <td>
+                    • Cross-functional<br>
+                    • Self-organizing / self-managing, without externally assigned roles<br>
+                    • Negotiates commitments with the Product Owner, one Sprint at a time<br>
+                    • Has autonomy regarding how to reach commitments<br>
+                    • Intensely collaborative<br>
+                    • Responsible for completing all the tasks in a sprint<br>
+                    • Owns the Process to do the work
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Team</h3>
+    <p>The Scrum Team consists of a Product Owner, the Development Team, and a Scrum Master. Scrum Teams are self-organizing and cross-functional. Self-organizing teams choose how best to accomplish their work, rather than being directed by others outside the team. Cross-functional teams possess all the competencies needed to accomplish the work without depending on others who are not part of the team. The Scrum team model optimizes flexibility, creativity, and productivity.</p>
+
+    <h3>Scrum ceremonies</h3>
+    <p>Scrum prescribes four formal events for inspection and adaptation, as described in the Scrum document:</p>
+
+    <ul>
+        <li>Sprint Planning</li>
+        <li>Daily Scrum</li>
+        <li>Sprint Review</li>
+        <li>Sprint Retrospective</li>
+    </ul>
+
+    <img src="assets/media/image22.png" alt="Scrum Ceremonies">
+
+    <p><em>This stage produces the source code, executables, and test data. The programmers ensure that the coding standards are followed.</em></p>
+
+    <p>Below are important Scrum ceremonies and activities performed. Apart from the below depending on project complexity and priorities, additional ceremonies like Backlog grooming, Backlog refinement, Scrum of Scrum, etc. are planned.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th><strong>Frequency</strong></th>
+                <th><strong>Duration</strong></th>
+                <th><strong>Participants</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Daily Scrum call</strong></td>
+                <td><strong>15 minutes</strong></td>
+                <td><strong>All</strong><br>Dev Team main active participants<br>+ Product Manager</td>
+            </tr>
+            <tr>
+                <td><strong>Bi-Weekly Status</strong></td>
+                <td><strong>30 minutes</strong></td>
+                <td>Engagement Owners<br>Product Manager<br>SM/BA</td>
+            </tr>
+            <tr>
+                <td><strong>Backlog Refinement Meetings</strong></td>
+                <td><strong>60 minutes</strong></td>
+                <td>Product Owner<br>Engineering Team<br>Engineering Managers<br>SM/BA</td>
+            </tr>
+            <tr>
+                <td><strong>Sprint Planning (2-week sprints)</strong></td>
+                <td><strong>60 - 180 minutes</strong></td>
+                <td><strong>Development Team, Product Manager</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Sprint Demo (2-week sprints)</strong></td>
+                <td><strong>60 minutes</strong></td>
+                <td>All Involved in Current Sprint Invited<br>Dev Team and Product Manager Main active participants</td>
+            </tr>
+            <tr>
+                <td><strong>Retrospective after every milestone</strong></td>
+                <td><strong>30 minutes</strong></td>
+                <td><strong>All Invited</strong><br>Dev Team and Product Manager main active participants</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Sprint Cycles</h3>
+    <p>We use 2-week sprints, with 4 sprints comprising one project phase.</p>
+
+    <div class="back-link">
+        <a href="introduction.html">← Back to Introduction</a>
+    </div>
+</body>
+</html>

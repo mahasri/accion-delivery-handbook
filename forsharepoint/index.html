@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accion Delivery Handbook - SharePoint Version</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #ffffff;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #1a365d;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #3182ce;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1a365d;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .nav-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-color: #3182ce;
+        }
+
+        .nav-card h3 {
+            color: #1a365d;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .nav-card p {
+            color: #4a5568;
+            font-size: 0.9rem;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .intro-section {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .intro-section h2 {
+            color: #1a365d;
+            margin-top: 0;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            color: #2d3748;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Accion Delivery Handbook</h1>
+
+    <div class="intro-section">
+        <h2>Welcome to the SharePoint Version</h2>
+        <p>This is a standalone version of the Accion Delivery Handbook designed for SharePoint integration. Each section is available as a separate HTML page that you can upload individually to your SharePoint site.</p>
+    </div>
+
+    <div class="nav-grid">
+        <a href="introduction.html" class="nav-card">
+            <h3>Introduction</h3>
+            <p>Overview of the Accion Delivery Handbook and its comprehensive approach to project delivery and management.</p>
+        </a>
+
+        <a href="project-initiation.html" class="nav-card">
+            <h3>Project Initiation</h3>
+            <p>Extended Delivery Center (EDC) model, white-box approach, and project setup methodologies.</p>
+        </a>
+
+        <a href="transition-management.html" class="nav-card">
+            <h3>Transition Management</h3>
+            <p>Comprehensive transition methodology, phases, and hypercare governance for smooth project handovers.</p>
+        </a>
+
+        <a href="delivery-execution.html" class="nav-card">
+            <h3>Delivery Execution</h3>
+            <p>Software Development Life Cycle (SDLC) stages, quality assurance, and agile integration practices.</p>
+        </a>
+
+        <a href="value-driven-delivery.html" class="nav-card">
+            <h3>Value-Driven Delivery</h3>
+            <p>Value creation focus, assessment frameworks, and success metrics for business impact.</p>
+        </a>
+
+        <a href="agile-methodologies.html" class="nav-card">
+            <h3>Agile Methodologies</h3>
+            <p>Agile manifesto, Scrum framework, roles, ceremonies, and sprint management practices.</p>
+        </a>
+
+        <a href="genai-adoption.html" class="nav-card">
+            <h3>GenAI Adoption</h3>
+            <p>Generative AI integration strategy, use cases, and responsible AI implementation practices.</p>
+        </a>
+
+        <a href="metrics-kpis.html" class="nav-card">
+            <h3>Metrics & KPIs</h3>
+            <p>Comprehensive measurement framework, performance indicators, and monitoring strategies.</p>
+        </a>
+
+        <a href="delivery-governance.html" class="nav-card">
+            <h3>Delivery Governance</h3>
+            <p>Governance framework, risk management, and stakeholder alignment processes.</p>
+        </a>
+
+        <a href="best-practices.html" class="nav-card">
+            <h3>Best Practices</h3>
+            <p>Proven methodologies, guidelines, and continuous improvement practices for delivery excellence.</p>
+        </a>
+
+        <a href="appendix.html" class="nav-card">
+            <h3>Appendix</h3>
+            <p>Templates, checklists, reference materials, and quick guides for enhanced productivity.</p>
+        </a>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e2e8f0; color: #718096;">
+        <p><strong>Accion Labs Delivery Handbook</strong> - SharePoint Integration Version</p>
+        <p>Each page is designed to be uploaded individually to SharePoint for easy navigation and maintenance.</p>
+    </div>
+</body>
+</html>
