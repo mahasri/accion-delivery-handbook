@@ -5,7 +5,7 @@ site_url: https://mahasri.github.io/accion-delivery-handbook/
 theme:
   name: material
   language: en
-  logo: assets/2ed88e01db860e124d144c5fe92e2f922f8d0165.png
+  logo: assets/logo.png
   features:
     - navigation.instant
     - navigation.tracking
