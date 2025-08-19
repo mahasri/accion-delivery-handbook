@@ -56,11 +56,21 @@ nav:
   - GenAI Adoption: genai-adoption/index.md
   - Complete Handbook: converted/delivery-handbook.md
   - Appendix:
-    - SDLC Tools: appendix/sdlc-tools/project-charter.md
-    - Sprint Planning: appendix/sdlc-tools/sprint-planning.md
-    - User Story: appendix/sdlc-tools/user-story.md
-    - Retrospective: appendix/sdlc-tools/retrospective.md
-    - Kanban Board: appendix/sdlc-tools/kanban-board.md
+      - SDLC Tools: appendix/sdlc-tools/project-charter.md
+      - Sprint Planning: appendix/sdlc-tools/sprint-planning.md
+      - User Story: appendix/sdlc-tools/user-story.md
+      - Retrospective: appendix/sdlc-tools/retrospective.md
+      - Kanban Board: appendix/sdlc-tools/kanban-board.md
+      - Code Review: appendix/sdlc-tools/code-review.md
+      - Deployment: appendix/sdlc-tools/deployment.md
+      - Stakeholder Analysis: appendix/sdlc-tools/stakeholder-analysis.md
+      - Risk Assessment: appendix/sdlc-tools/risk-assessment.md
+      - Transition Checklist: appendix/sdlc-tools/transition-checklist.md
+      - Knowledge Transfer: appendix/sdlc-tools/knowledge-transfer.md
+      - Sprint 0 Planning: appendix/sdlc-tools/sprint-0-planning.md
+      - Value Assessment: appendix/sdlc-tools/value-assessment.md
+      - ROI Calculator: appendix/sdlc-tools/roi-calculator.md
+      - Business Case: appendix/sdlc-tools/business-case.md
 
 markdown_extensions:
   - admonition
