@@ -22,6 +22,13 @@ The Best Practices & Guidelines section covers essential practices for each phas
 - Scalability and performance considerations
 - Frontend and backend architecture guidelines
 
+### [Design Guidelines](design-guidelines.md)
+- UX and UI consistency standards
+- Accessibility considerations
+- Responsive layout and interaction patterns
+- Design documentation and handoff practices
+- Collaboration workflows between design and engineering
+
 ### [Development Best Practices](development.md)
 - Coding standards and conventions
 - Code review processes
@@ -49,6 +56,14 @@ The Best Practices & Guidelines section covers essential practices for each phas
 - Risk management and rollback strategies
 - Production readiness criteria
 - Release coordination
+
+### [SDLC Tools & Automation](sdlc-tools/index.md)
+- Toolchain governance and onboarding
+- Automation templates and shared configurations
+- Quality gates and continuous integration hooks
+- Usage guides for key tools:
+  - [ESLint](sdlc-tools/eslint.md)
+  - [Playwright](sdlc-tools/playwright.md)
 
 ## Implementation Approach
 
