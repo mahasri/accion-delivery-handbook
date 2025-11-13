@@ -322,7 +322,7 @@ Add to `package.json`:
 ## Related Topics
 
 - [Development Best Practices](../development.md)
-- [Code Review Guidelines](../../../appendix/sdlc-tools/code-review.md)
+- [Code Review Guidelines](../../appendix/sdlc-tools/code-review.md)
 - [SDLC Tools Overview](index.md)
 
 ---
