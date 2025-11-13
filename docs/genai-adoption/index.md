@@ -1,5 +1,14 @@
 # Gen AI Adoption
 
+<div class="download-section" style="text-align: center; margin: 20px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; color: white;">
+    <h3 style="margin-bottom: 15px; color: white;">📄 Download GenAI Adoption Guide</h3>
+    <p style="margin-bottom: 20px; font-size: 1.1em;">Get a comprehensive PDF version of this guide for offline reference and sharing.</p>
+    <button id="downloadPdfBtn" class="download-btn" style="background: #ffffff; color: #667eea; border: none; padding: 12px 30px; border-radius: 25px; font-size: 1.1em; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        📥 Download as PDF
+    </button>
+    <div id="downloadStatus" style="margin-top: 10px; font-size: 0.9em; opacity: 0.9;"></div>
+</div>
+
 ## KAPS Framework
 
 The KAPS framework provides a comprehensive approach to enterprise GenAI transformation, integrating four key pillars: Knowledge, Analytics, Process, and Systems. This holistic framework enables organizations to leverage GenAI capabilities across their entire operational spectrum - from transforming unstructured content into actionable insights, to delivering data-driven analytics, optimizing business processes, and modernizing legacy systems.
@@ -125,6 +134,140 @@ Few of the solutions already implemented for various customers (as on 12 Feb 202
 - **Error classification and workflow automation** (1)
 - **API and UI testing Automation** (3)
 
+<style>
+/* Download section styles */
+.download-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.download-btn {
+    background: #ffffff;
+    color: #667eea;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.download-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.download-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+#downloadStatus {
+    margin-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.9;
+    min-height: 20px;
+}
+
+@media (max-width: 768px) {
+    .download-section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .download-btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+}
+</style>
+
 ---
 
 *Previous: [Best Practices ←](../best-practices/)*
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById('downloadPdfBtn');
+    const statusDiv = document.getElementById('downloadStatus');
+    
+    downloadBtn.addEventListener('click', function() {
+        // Update button state
+        downloadBtn.disabled = true;
+        downloadBtn.innerHTML = '⏳ Generating PDF...';
+        statusDiv.innerHTML = 'Preparing document for download...';
+        
+        // Get the main content area (excluding the download section)
+        const contentElement = document.querySelector('.md-content__inner');
+        const downloadSection = document.querySelector('.download-section');
+        
+        // Create a clone of the content for PDF generation
+        const pdfContent = contentElement.cloneNode(true);
+        
+        // Remove the download section from the PDF
+        const pdfDownloadSection = pdfContent.querySelector('.download-section');
+        if (pdfDownloadSection) {
+            pdfDownloadSection.remove();
+        }
+        
+        // Configure PDF options
+        const opt = {
+            margin: [10, 10, 10, 10],
+            filename: 'GenAI-Adoption-Guide.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { 
+                scale: 2,
+                useCORS: true,
+                allowTaint: true
+            },
+            jsPDF: { 
+                unit: 'mm', 
+                format: 'a4', 
+                orientation: 'portrait' 
+            }
+        };
+        
+        // Generate and download PDF
+        html2pdf().set(opt).from(pdfContent).save().then(function() {
+            // Reset button state
+            downloadBtn.disabled = false;
+            downloadBtn.innerHTML = '📥 Download as PDF';
+            statusDiv.innerHTML = '✅ PDF downloaded successfully!';
+            
+            // Clear status after 3 seconds
+            setTimeout(function() {
+                statusDiv.innerHTML = '';
+            }, 3000);
+        }).catch(function(error) {
+            console.error('PDF generation failed:', error);
+            downloadBtn.disabled = false;
+            downloadBtn.innerHTML = '📥 Download as PDF';
+            statusDiv.innerHTML = '❌ PDF generation failed. Please try again.';
+            
+            // Clear status after 5 seconds
+            setTimeout(function() {
+                statusDiv.innerHTML = '';
+            }, 5000);
+        });
+    });
+    
+    // Add hover effects
+    downloadBtn.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+        this.style.boxShadow = '0 6px 20px rgba(0,0,0,0.3)';
+    });
+    
+    downloadBtn.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
+    });
+});
+</script>
